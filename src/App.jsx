@@ -9,7 +9,7 @@ function App() {
     <div>
       
     <Navbar/>
-      <h1 className="title ">KS1 SERIES</h1>
+      <h1 className="title ">KS1 SERIESs/h1>
     <Footer/>
     </div>
   )
