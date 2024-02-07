@@ -1,15 +1,15 @@
 import "./App.css"      
-import { Navbar } from "./Navbar"
-import { Footer } from "./Footer"
+import { Navbar } from "./components/layout/Navbar"
+import { Footer } from "./components/layout/Footer"
+import { ItemListContainer } from "./components/pages/itemListContainer"
 
 function App() {
  
   return (
     
-    <div>
-      
+    <div className="main">  
     <Navbar/>
-      <h1 className="title ">KS1 SERIESs/h1>
+    <ItemListContainer greeting={"hola, como estas?"}/>
     <Footer/>
     </div>
   )
