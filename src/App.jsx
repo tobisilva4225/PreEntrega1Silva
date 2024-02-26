@@ -1,18 +1,18 @@
-import "./App.css"      
-import { Navbar } from "./components/layout/Navbar"
-import { Footer } from "./components/layout/Footer"
-import { ItemListContainer } from "./components/pages/itemListContainer"
+import "./App.css";
+import { NavbarContainer } from "./components/layout/navbar/NavbarContainer";
+import { FooterContainer } from "./components/layout/footer/FooterContainer";
+import { ItemListContainer } from "./components/pages/itemListContainer/ItemListContainer";
+import { ItemDetailContainer } from "./components/pages/itemDetailContainer/ItemDetailContainer";
 
 function App() {
- 
   return (
-    
-    <div className="main">  
-    <Navbar/>
-    <ItemListContainer greeting={"hola, como estas?"}/>
-    <Footer/>
-    </div>
-  )
+    <>
+      <NavbarContainer />
+      {/* <ItemDetailContainer /> */}
+      <ItemListContainer />
+      <FooterContainer />
+    </>
+  );
 }
 
-export default App
+export default App;

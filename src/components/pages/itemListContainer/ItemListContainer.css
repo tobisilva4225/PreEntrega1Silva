@@ -1,0 +1,12 @@
+.divContainer {
+  display: flex;
+  flex-flow: wrap;
+  align-items: stretch;
+}
+
+.spinner {
+  margin: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

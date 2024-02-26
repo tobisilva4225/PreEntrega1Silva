@@ -1,0 +1,12 @@
+.divCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divCount button,
+h4 {
+  border-radius: 4px;
+  padding: 4px;
+  margin: 3px;
+}

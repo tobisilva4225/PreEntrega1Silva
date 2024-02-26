@@ -1,4 +1,4 @@
-import { CardWidget } from "../common/CardWidget"
+import { CardWidget } from "../../common/carWidget/CardWidget"
 import "./Navbar.css"
 
 

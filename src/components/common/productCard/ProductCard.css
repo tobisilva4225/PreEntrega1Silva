@@ -1,0 +1,8 @@
+.divCard {
+  border: 2px solid black;
+  margin: 2rem;
+  width: 20%;
+}
+.divCard img {
+  width: 100%;
+}
