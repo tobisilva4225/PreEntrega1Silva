@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ItemDetail } from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../../../productsMock";
+import { CartContext } from "../../../context/CartContext";
 
 export const ItemDetailContainer = () => {
   const { id } = useParams();
+
+  const { addToCart } = useContext(CartContext);
 
   const [item, setItem] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -16,6 +19,14 @@ export const ItemDetailContainer = () => {
     });
   }, [id]);
 
+  const onAdd = (cantidad) => {
+    let infoProducto = {
+      ...item,
+      quantity: cantidad,
+    };
+    addToCart(infoProducto);
+  };
+
   return (
     <>
       {isLoading ? (
@@ -23,7 +34,7 @@ export const ItemDetailContainer = () => {
           <span className="visually-hidden">Loading...</span>
         </div>
       ) : (
-        <ItemDetail item={item} />
+        <ItemDetail item={item} onAdd={onAdd} />
       )}
     </>
   );

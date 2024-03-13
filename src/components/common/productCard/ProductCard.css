@@ -1,8 +1,10 @@
-.divCard {
+.Card {
   border: 2px solid black;
   margin: 2rem;
-  width: 20%;
+  width: 21%;
 }
-.divCard img {
-  width: 100%;
+
+.card-body img {
+  width: 24rem;
+  height: 24rem;
 }

@@ -1,6 +1,6 @@
 import "./ItemCount.css";
 
-export const ItemCount = ({ counter, addOne, subOne }) => {
+export const ItemCount = ({ counter, addOne, subOne, onAdd }) => {
   return (
     <div className="divCount">
       <button onClick={subOne} disabled={counter === 1 ? true : false}>
@@ -8,7 +8,7 @@ export const ItemCount = ({ counter, addOne, subOne }) => {
       </button>
       <h4>{counter}</h4>
       <button onClick={addOne}>+</button>
-      <button>Agregar al Carrito</button>
+      <button onClick={() => onAdd(counter)}>Agregar al Carrito</button>
     </div>
   );
 };

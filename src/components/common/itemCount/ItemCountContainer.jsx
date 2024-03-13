@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ItemCount } from "./ItemCount";
 
-export const ItemCountContainer = ({ stock }) => {
+export const ItemCountContainer = ({ stock, onAdd }) => {
   const [counter, setCounter] = useState(1);
 
   const addOne = () => {
@@ -18,5 +18,12 @@ export const ItemCountContainer = ({ stock }) => {
     }
   };
 
-  return <ItemCount counter={counter} addOne={addOne} subOne={subOne} />;
+  return (
+    <ItemCount
+      counter={counter}
+      addOne={addOne}
+      subOne={subOne}
+      onAdd={onAdd}
+    />
+  );
 };
