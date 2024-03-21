@@ -56,9 +56,7 @@ export const Navbar = () => {
               </Link>
             </ul>
           </div>
-          <Link to="/">
-            <li className="btn btn-outline-light">Nosotros</li>
-          </Link>
+
           <Link to="/">
             <li className="btn btn-outline-light">Contacto</li>
           </Link>

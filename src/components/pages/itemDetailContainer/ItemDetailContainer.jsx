@@ -1,22 +1,29 @@
 import { useContext, useEffect, useState } from "react";
 import { ItemDetail } from "./ItemDetail";
 import { useParams } from "react-router-dom";
-import { getProduct } from "../../../productsMock";
+
 import { CartContext } from "../../../context/CartContext";
+import { db } from "../../../FirebaseConfig";
+import { collection, doc, getDoc } from "firebase/firestore";
 
 export const ItemDetailContainer = () => {
   const { id } = useParams();
 
-  const { addToCart } = useContext(CartContext);
+  const { addToCart, getTotalQuantityById } = useContext(CartContext);
+
+  const initial = getTotalQuantityById(id);
 
   const [item, setItem] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    getProduct(id).then((resp) => {
-      setItem(resp);
-      setIsLoading(false);
-    });
+    let productsCollection = collection(db, "products");
+    let refDoc = doc(productsCollection, id);
+    getDoc(refDoc)
+      .then((res) => {
+        setItem({ ...res.data(), id: res.id });
+      })
+      .finally(() => setIsLoading(false));
   }, [id]);
 
   const onAdd = (cantidad) => {
@@ -34,7 +41,7 @@ export const ItemDetailContainer = () => {
           <span className="visually-hidden">Loading...</span>
         </div>
       ) : (
-        <ItemDetail item={item} onAdd={onAdd} />
+        <ItemDetail item={item} onAdd={onAdd} initial={initial} />
       )}
     </>
   );

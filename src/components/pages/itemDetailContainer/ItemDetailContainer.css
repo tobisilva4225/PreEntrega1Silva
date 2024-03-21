@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  margin: 2rem;
 }
 
 .detailContainer {
@@ -17,4 +18,9 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: space-around;
+  color: white;
+}
+
+.initial {
+  color: white;
 }

@@ -4,7 +4,13 @@
   width: 21%;
 }
 
-.card-body img {
-  width: 24rem;
-  height: 24rem;
+.card-text {
+  color: white;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,15 +1,5 @@
 export let products = [
   {
-    id: "1",
-    title: "campera 1",
-    price: 10000,
-    description: "Campera comando Ejercito Argentino",
-    img: "https://res.cloudinary.com/doavc2x22/image/upload/v1708286121/assets/CAMPERAS/04_jhctja.jpg",
-    stock: 3,
-    category: "camperas",
-  },
-  {
-    id: "2",
     title: "campera 2",
     price: 12000,
     description: "Campera Ruger",
@@ -18,7 +8,6 @@ export let products = [
     category: "camperas",
   },
   {
-    id: "3",
     title: "campera 3",
     price: 8000,
     description: "Campera browning camp",
@@ -27,7 +16,6 @@ export let products = [
     category: "camperas",
   },
   {
-    id: "4",
     title: "campera 4",
     price: 9000,
     description: "Campera glock operator",
@@ -36,7 +24,6 @@ export let products = [
     category: "camperas",
   },
   {
-    id: "5",
     title: "campera 5",
     price: 12500,
     description: "Campera mauser",
@@ -45,7 +32,6 @@ export let products = [
     category: "camperas",
   },
   {
-    id: "6",
     title: "campera 6",
     price: 10000,
     description: "campera bretta",
@@ -54,7 +40,6 @@ export let products = [
     category: "camperas",
   },
   {
-    id: "7",
     title: "campera 7",
     price: 9000,
     description: "campera instructor tiro",
@@ -62,17 +47,8 @@ export let products = [
     stock: 10,
     category: "camperas",
   },
+
   {
-    id: "8",
-    title: "gorra 1",
-    price: 5000,
-    description: "gorra caceria de patos",
-    img: "https://res.cloudinary.com/doavc2x22/image/upload/v1708286124/assets/GORRAS/25_m4ghxx.jpg",
-    stock: 3,
-    category: "gorras",
-  },
-  {
-    id: "9",
     title: "gorra 2",
     price: 4000,
     description: "gorra tikka",
@@ -81,7 +57,6 @@ export let products = [
     category: "gorras",
   },
   {
-    id: "10",
     title: "gorra 3",
     price: 3500,
     description: "gorra operador camuflada",
@@ -90,7 +65,6 @@ export let products = [
     category: "gorras",
   },
   {
-    id: "11",
     title: "gorra 4",
     price: 5000,
     description: "gorra cz",
@@ -99,7 +73,6 @@ export let products = [
     category: "gorras",
   },
   {
-    id: "12",
     title: "manga 1",
     price: 3000,
     description: "mangas cz",
@@ -108,7 +81,6 @@ export let products = [
     category: "mangas",
   },
   {
-    id: "13",
     title: "manga 2",
     price: 4000,
     description: "mangas taurus",
@@ -117,7 +89,6 @@ export let products = [
     category: "mangas",
   },
   {
-    id: "14",
     title: "manga 3",
     price: 3000,
     description: "mangas tanfoglio",
@@ -126,7 +97,6 @@ export let products = [
     category: "mangas",
   },
   {
-    id: "15",
     title: "manga 4",
     price: 3000,
     description: "mangas sig sauer",
@@ -135,7 +105,6 @@ export let products = [
     category: "mangas",
   },
   {
-    id: "16",
     title: "parche 1",
     price: 1300,
     description: "parche bandera tiro",
@@ -144,7 +113,6 @@ export let products = [
     category: "parches",
   },
   {
-    id: "17",
     title: "parche 2",
     price: 1200,
     description: "parche unidad canina",
@@ -153,7 +121,6 @@ export let products = [
     category: "parches",
   },
   {
-    id: "18",
     title: "parche 3",
     price: 1000,
     description: "parche k 9 argentina",
@@ -162,7 +129,6 @@ export let products = [
     category: "parches",
   },
   {
-    id: "19",
     title: "parche 4",
     price: 1200,
     description: "parche cuerpo de infanteria",
@@ -171,7 +137,6 @@ export let products = [
     category: "parches",
   },
   {
-    id: "20",
     title: "remera 1",
     price: 12000,
     description: "remera malvinas",
@@ -180,7 +145,6 @@ export let products = [
     category: "remeras",
   },
   {
-    id: "21",
     title: "remera 2",
     price: 20000,
     description: "remera malvinas siempre presente",
@@ -189,7 +153,6 @@ export let products = [
     category: "remeras",
   },
   {
-    id: "22",
     title: "remera 3",
     price: 15000,
     description: "remera infanteria de marina",
@@ -198,7 +161,6 @@ export let products = [
     category: "remeras",
   },
   {
-    id: "23",
     title: "remera 4",
     price: 16000,
     description: "remera cazador de montaña",
@@ -207,7 +169,6 @@ export let products = [
     category: "remeras",
   },
   {
-    id: "24",
     title: "sticker",
     price: 1000,
     description: "sticker operador medicina tactica",
@@ -216,7 +177,6 @@ export let products = [
     category: "stickers",
   },
   {
-    id: "25",
     title: "sticker",
     price: 1200,
     description: "sticker instructor de tiro",
@@ -225,7 +185,6 @@ export let products = [
     category: "stickers",
   },
   {
-    id: "26",
     title: "sticker",
     price: 900,
     description: "sticker glock operator",
@@ -234,7 +193,6 @@ export let products = [
     category: "stickers",
   },
   {
-    id: "27",
     title: "sticker",
     price: 1000,
     description: "sticker malvinas ",

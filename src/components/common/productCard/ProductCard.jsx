@@ -5,14 +5,14 @@ export const ProductCard = ({ img, description, id }) => {
   return (
     <>
       <div className="Card ">
-        <div className="card-body">
-          <img src={img} className="card-img-top w-100 h-100" alt="" />
+        <div className="card-body bg-black">
+          <img src={img} className="card-img-top " alt="" />
           <div className="card-text">
-            <h3 className="card-title">{description}</h3>
+            <h5 className=" text-nowrap ">{description}</h5>
           </div>
 
           <Link to={`/itemDetail/${id}`}>
-            <button className="btn  btn-primary">detalles</button>
+            <button className="btn btn-outline-light ">detalles</button>
           </Link>
         </div>
       </div>
